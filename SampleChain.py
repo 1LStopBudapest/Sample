@@ -1,6 +1,7 @@
 import os, sys
 import ROOT
 import subprocess
+import types
 import FileList_2016
 
 class SampleChain():
@@ -17,7 +18,12 @@ class SampleChain():
         
     def getchain(self):
         ch = ROOT.TChain(self.treename)
-        filelist = self.getfilelist(self.samplelist[self.sample][0])
+        filelist = []
+        if isinstance(self.samplelist[self.sample][0], types.ListType):
+            for s in self.samplelist[self.sample]:
+                filelist.extend(self.getfilelist(s[0]))
+        else:
+            filelist = self.getfilelist(self.samplelist[self.sample][0])
         self.addtochain(ch, filelist, self.startfile, self.filestorun)
         return ch
 
