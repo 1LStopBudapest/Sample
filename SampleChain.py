@@ -21,7 +21,7 @@ class SampleChain():
         filelist = []
         if isinstance(self.samplelist[self.sample][0], types.ListType):
             for s in self.samplelist[self.sample]:
-                filelist.extend(getfilelist(s[0]))
+                filelist.extend(self.getfilelist(s[0]))
         else:
             filelist = self.getfilelist(self.samplelist[self.sample][0])
         self.addtochain(ch, filelist, self.startfile, self.filestorun)
