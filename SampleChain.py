@@ -3,19 +3,25 @@ import ROOT
 import subprocess
 import types
 import FileList_2016
+import FileList_Fake_2016
 
 class SampleChain():
     luminosity_2016           = 35922.0
     luminosity_2017           = 41856.0
     luminosity_2018           = 58905.0
-    samplelist = FileList_2016.samples
     
-    def __init__(self, sample, startfile, filestorun, treename = "Events"):
+    def __init__(self, sample, startfile, filestorun, year=2016, proc = "other", treename = "Events"):
         self.sample = sample
         self.startfile = startfile
         self.filestorun = filestorun
         self.treename = treename
-        
+        if year==2016:
+            self.samplelist = FileList_Fake_2016.samples if 'fake' in proc else FileList_2016.samples
+        elif year==2017:
+            self.samplelist = FileList_Fake_2017.samples if 'fake' in proc else FileList_2017.samples
+        else:
+            self.samplelist = FileList_Fake_2018.samples if 'fake' in proc else FileList_2018.samples
+            
     def getchain(self):
         ch = ROOT.TChain(self.treename)
         filelist = []
@@ -46,3 +52,6 @@ class SampleChain():
 
     def getEntries(self, ch):
         return ch.GetEntries()
+
+    def getSampleList(self):
+        return self.samplelist

@@ -2,7 +2,7 @@ import os, sys
 
 from Dir import userpath
 
-MC_dir = "PostProcessedNtuple/2016/MetSingleLep/"
+MC_dir = "PostProcessedNtuple/2016/FakeRate/"
 Data_dir = MC_dir
 Signal_dir = "StopSignal/"
 
@@ -25,6 +25,19 @@ samples['Stop_500_480_tau100mm_full'] = [os.path.join(userpath, Signal_dir, "Sto
 
 #PostProcessed Samples
 #BK MC
+
+samples['QCD_HT50to100'] = [os.path.join(userpath, MC_dir, "QCD_HT50to100/"), 246400000.0, ]
+samples['QCD_HT100to200'] = [os.path.join(userpath, MC_dir, "QCD_HT100to200/"), 27850000.0, ]
+samples['QCD_HT200to300'] = [os.path.join(userpath, MC_dir, "QCD_HT200to300/"), 1717000, ]
+samples['QCD_HT300to500'] = [os.path.join(userpath, MC_dir, "QCD_HT300to500/"), 351300, ]
+samples['QCD_HT500to700'] = [os.path.join(userpath, MC_dir, "QCD_HT500to700/"), 31630, ]
+samples['QCD_HT700to1000'] = [os.path.join(userpath, MC_dir, "QCD_HT700to1000/"), 6802, ]
+samples['QCD_HT1000to1500'] = [os.path.join(userpath, MC_dir, "QCD_HT1000to1500/"), 1206, ]
+samples['QCD_HT1500to2000'] = [os.path.join(userpath, MC_dir, "QCD_HT1500to2000/"), 20.4, ]
+samples['QCD_HT2000toInf'] = [os.path.join(userpath, MC_dir, "QCD_HT2000toInf/"), 25.25]
+samples['QCD'] = [samples['QCD_HT50to100'], samples['QCD_HT100to200'], samples['QCD_HT200to300'], samples['QCD_HT300to500'], samples['QCD_HT500to700'], samples['QCD_HT700to1000'], samples['QCD_HT1000to1500'], samples['QCD_HT1500to2000'], samples['QCD_HT2000toInf']]
+
+'''
 samples['TTSingleLep_pow'] = [os.path.join(userpath, MC_dir, "TTSingleLep_pow/"), 831.762*(3*0.108)*(1-3*0.108)*2, 2678436]
 samples['TTLep_pow'] = [os.path.join(userpath, MC_dir, "TTLep_pow/"), 831.762*((3*0.108)**2), 23248235]
 
@@ -44,16 +57,6 @@ samples['WJetsToLNu_HT1200to2500'] = [os.path.join(userpath, MC_dir, "WJetsToLNu
 samples['WJetsToLNu_HT2500toInf'] = [os.path.join(userpath, MC_dir, "WJetsToLNu_HT2500toInf/"), 0.0389136, 135533]
 samples['WJetsToLNu'] = [samples['WJetsToLNu_HT70to100'], samples['WJetsToLNu_HT100to200'], samples['WJetsToLNu_HT200to400'], samples['WJetsToLNu_HT400to600'], samples['WJetsToLNu_HT600to800'], samples['WJetsToLNu_HT800to1200'], samples['WJetsToLNu_HT1200to2500'], samples['WJetsToLNu_HT2500toInf']]
 
-samples['QCD_HT50to100'] = [os.path.join(userpath, MC_dir, "QCD_HT50to100/"), 246400000.0, ]
-samples['QCD_HT100to200'] = [os.path.join(userpath, MC_dir, "QCD_HT100to200/"), 27850000.0, ]
-samples['QCD_HT200to300'] = [os.path.join(userpath, MC_dir, "QCD_HT200to300/"), 1717000, ]
-samples['QCD_HT300to500'] = [os.path.join(userpath, MC_dir, "QCD_HT300to500/"), 351300, ]
-samples['QCD_HT500to700'] = [os.path.join(userpath, MC_dir, "QCD_HT500to700/"), 31630, ]
-samples['QCD_HT700to1000'] = [os.path.join(userpath, MC_dir, "QCD_HT700to1000/"), 6802, ]
-samples['QCD_HT1000to1500'] = [os.path.join(userpath, MC_dir, "QCD_HT1000to1500/"), 1206, ]
-samples['QCD_HT1500to2000'] = [os.path.join(userpath, MC_dir, "QCD_HT1500to2000/"), 20.4, ]
-samples['QCD_HT2000toInf'] = [os.path.join(userpath, MC_dir, "QCD_HT2000toInf/"), 25.25]
-samples['QCD'] = [samples['QCD_HT50to100'], samples['QCD_HT100to200'], samples['QCD_HT200to300'], samples['QCD_HT300to500'], samples['QCD_HT500to700'], samples['QCD_HT700to1000'], samples['QCD_HT1000to1500'], samples['QCD_HT1500to2000'], samples['QCD_HT2000toInf']]
 
 samples['ZJetsToNuNu_HT100to200'] = [os.path.join(userpath, MC_dir, "ZJetsToNuNu_HT100to200/"), 344.9781, ]
 samples['ZJetsToNuNu_HT200to400'] = [os.path.join(userpath, MC_dir, "ZJetsToNuNu_HT200to400/"), 96.3828, ]
@@ -97,28 +100,21 @@ samples['ZZTo2L2Q'] = [os.path.join(userpath, MC_dir, "ZZTo2L2Q/"), 3.28, ]
 samples['ZZTo2Q2Nu'] = [os.path.join(userpath, MC_dir, "ZZTo2Q2Nu/"), 4.04, ]
 samples['ZZTo4L'] = [os.path.join(userpath, MC_dir, "ZZTo4L/"), 1.256*1.1, ]
 samples['VV'] = [samples['WWTo2L2Nu'], samples['WWToLNuQQ'], samples['WZTo1L1Nu2Q'], samples['WZTo1L3Nu'], samples['WZTo2L2Q'], samples['WZTo3LNu'], samples['ZZTo2L2Nu'], samples['ZZTo2L2Q'], samples['ZZTo2Q2Nu'], samples['ZZTo4L']]
-
+'''
 #Data
-#MET
-samples['MET_Run2016B'] = [os.path.join(userpath, Data_dir, "MET_Run2016B_17Jul2018_ver2/"), 1.00, 5023831]
-samples['MET_Run2016C'] = [os.path.join(userpath, Data_dir, "MET_Run2016C_17Jul2018/"), 1.00, 2389671]
-samples['MET_Run2016D'] = [os.path.join(userpath, Data_dir, "MET_Run2016D_17Jul2018/"), 1.00, 3633132]
-samples['MET_Run2016E'] = [os.path.join(userpath, Data_dir, "MET_Run2016E_17Jul2018/"), 1.00, 3631331]
-samples['MET_Run2016F'] = [os.path.join(userpath, Data_dir, "MET_Run2016F_17Jul2018/"), 1.00, 2335934]
-samples['MET_Run2016G'] = [os.path.join(userpath, Data_dir, "MET_Run2016G_17Jul2018/"), 1.00, 5150593]
-samples['MET_Run2016H'] = [os.path.join(userpath, Data_dir, "MET_Run2016H_17Jul2018/"), 1.00, 6358426]
-samples['MET_Data'] = [samples['MET_Run2016B'], samples['MET_Run2016C'], samples['MET_Run2016D'], samples['MET_Run2016E'], samples['MET_Run2016F'], samples['MET_Run2016G'], samples['MET_Run2016H']]
 
-#SingleElectron
-samples['SingleElectron_Run2016B'] = [os.path.join(userpath, Data_dir, "SingleElectron_Run2016B_17Jul2018_ver2/"), 1.00, 865966]
-samples['SingleElectron_Run2016C'] = [os.path.join(userpath, Data_dir, "SingleElectron_Run2016C_17Jul2018/"), 1.00, 463161]
-samples['SingleElectron_Run2016D'] = [os.path.join(userpath, Data_dir, "SingleElectron_Run2016D_17Jul2018/"), 1.00, 700244]
-samples['SingleElectron_Run2016E'] = [os.path.join(userpath, Data_dir, "SingleElectron_Run2016E_17Jul2018/"), 1.00, 836822]
-samples['SingleElectron_Run2016F'] = [os.path.join(userpath, Data_dir, "SingleElectron_Run2016F_17Jul2018/"), 1.00, 556410]
-samples['SingleElectron_Run2016G'] = [os.path.join(userpath, Data_dir, "SingleElectron_Run2016G_17Jul2018/"), 1.00, 1224131]
-samples['SingleElectron_Run2016H'] = [os.path.join(userpath, Data_dir, "SingleElectron_Run2016H_17Jul2018/"), 1.00, 1287221]
-samples['SingleElectron_Data'] = [samples['SingleElectron_Run2016B'], samples['SingleElectron_Run2016C'], samples['SingleElectron_Run2016D'], samples['SingleElectron_Run2016E'], samples['SingleElectron_Run2016F'], samples['SingleElectron_Run2016G'], samples['SingleElectron_Run2016H']] 
+#JetHT
+#samples['JetHT_Run2016B'] = [os.path.join(userpath, Data_dir, "JetHT_Run2016B_17Jul2018_ver2/"), 1.00, 5023831]
+samples['JetHT_Run2016C'] = [os.path.join(userpath, Data_dir, "JetHT_Run2016C_17Jul2018/"), 1.00, 2389671]
+samples['JetHT_Run2016D'] = [os.path.join(userpath, Data_dir, "JetHT_Run2016D_17Jul2018/"), 1.00, 3633132]
+samples['JetHT_Run2016E'] = [os.path.join(userpath, Data_dir, "JetHT_Run2016E_17Jul2018/"), 1.00, 3631331]
+samples['JetHT_Run2016F'] = [os.path.join(userpath, Data_dir, "JetHT_Run2016F_17Jul2018/"), 1.00, 2335934]
+samples['JetHT_Run2016G'] = [os.path.join(userpath, Data_dir, "JetHT_Run2016G_17Jul2018/"), 1.00, 5150593]
+samples['JetHT_Run2016H'] = [os.path.join(userpath, Data_dir, "JetHT_Run2016H_17Jul2018/"), 1.00, 6358426]
+#samples['JetHT_Data'] = [samples['JetHT_Run2016B'], samples['JetHT_Run2016C'], samples['JetHT_Run2016D'], samples['JetHT_Run2016E'], samples['JetHT_Run2016F'], samples['JetHT_Run2016G'], samples['JetHT_Run2016H']]
+samples['JetHT_Data'] = [samples['JetHT_Run2016C'], samples['JetHT_Run2016D'], samples['JetHT_Run2016E'], samples['JetHT_Run2016F'], samples['JetHT_Run2016G'], samples['JetHT_Run2016H']]
 
+'''
 #SingleMuon
 samples['SingleMuon_Run2016B'] = [os.path.join(userpath, Data_dir, "SingleMuon_Run2016B_17Jul2018_ver2/"), 1.00, 865966]
 samples['SingleMuon_Run2016C'] = [os.path.join(userpath, Data_dir, "SingleMuon_Run2016C_17Jul2018/"), 1.00, 463161]
@@ -128,13 +124,5 @@ samples['SingleMuon_Run2016F'] = [os.path.join(userpath, Data_dir, "SingleMuon_R
 samples['SingleMuon_Run2016G'] = [os.path.join(userpath, Data_dir, "SingleMuon_Run2016G_17Jul2018/"), 1.00, 1224131]
 samples['SingleMuon_Run2016H'] = [os.path.join(userpath, Data_dir, "SingleMuon_Run2016H_17Jul2018/"), 1.00, 1287221]
 samples['SingleMuon_Data'] = [samples['SingleMuon_Run2016B'], samples['SingleMuon_Run2016C'], samples['SingleMuon_Run2016D'], samples['SingleMuon_Run2016E'], samples['SingleMuon_Run2016F'], samples['SingleMuon_Run2016G'], samples['SingleMuon_Run2016H']] 
+'''
 
-#JetHT
-samples['JetHT_Run2016B'] = [os.path.join(userpath, Data_dir, "JetHT_Run2016B_17Jul2018_ver2/"), 1.00, 5023831]
-samples['JetHT_Run2016C'] = [os.path.join(userpath, Data_dir, "JetHT_Run2016C_17Jul2018/"), 1.00, 2389671]
-samples['JetHT_Run2016D'] = [os.path.join(userpath, Data_dir, "JetHT_Run2016D_17Jul2018/"), 1.00, 3633132]
-samples['JetHT_Run2016E'] = [os.path.join(userpath, Data_dir, "JetHT_Run2016E_17Jul2018/"), 1.00, 3631331]
-samples['JetHT_Run2016F'] = [os.path.join(userpath, Data_dir, "JetHT_Run2016F_17Jul2018/"), 1.00, 2335934]
-samples['JetHT_Run2016G'] = [os.path.join(userpath, Data_dir, "JetHT_Run2016G_17Jul2018/"), 1.00, 5150593]
-samples['JetHT_Run2016H'] = [os.path.join(userpath, Data_dir, "JetHT_Run2016H_17Jul2018/"), 1.00, 6358426]
-samples['JetHT_Data'] = [samples['JetHT_Run2016B'], samples['JetHT_Run2016C'], samples['JetHT_Run2016D'], samples['JetHT_Run2016E'], samples['JetHT_Run2016F'], samples['JetHT_Run2016G'], samples['JetHT_Run2016H']]
