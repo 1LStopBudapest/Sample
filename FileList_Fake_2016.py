@@ -81,7 +81,7 @@ samples['DYJetsToLL_M5to50_HT200to400'] = [os.path.join(userpath, MC_dir, "DYJet
 samples['DYJetsToLL_M5to50_HT400to600'] = [os.path.join(userpath, MC_dir, "DYJetsToLL_M5to50_HT400to600_comb/"), 3.581, ]
 samples['DYJetsToLL_M5to50_HT600toInf'] = [os.path.join(userpath, MC_dir, "DYJetsToLL_M5to50_HT600toInf/"), 1.124, ]
 samples['DYJetsToLL_M5to50'] = [samples['DYJetsToLL_M5to50_HT100to200'], samples['DYJetsToLL_M5to50_HT200to400'], samples['DYJetsToLL_M5to50_HT400to600'], samples['DYJetsToLL_M5to50_HT600toInf']]
-samples['DYJetsToLL'] = samples['DYJetsToLL_M50'] + samples['DYJetsToLL_M5to50']
+samples['DYJetsToLL'] = [samples['DYJetsToLL_M50_HT100to200'], samples['DYJetsToLL_M50_HT200to400'], samples['DYJetsToLL_M50_HT400to600'], samples['DYJetsToLL_M50_HT600to800'], samples['DYJetsToLL_M50_HT800to1200'], samples['DYJetsToLL_M50_HT1200to2500'], samples['DYJetsToLL_M50_HT2500toInf'], samples['DYJetsToLL_M5to50_HT100to200'], samples['DYJetsToLL_M5to50_HT200to400'], samples['DYJetsToLL_M5to50_HT400to600'], samples['DYJetsToLL_M5to50_HT600toInf']]
 
 samples['TTWToLNu'] = [os.path.join(userpath, MC_dir, "TTWToLNu_ext2/"), 0.2043, ]
 samples['TTWToQQ'] = [os.path.join(userpath, MC_dir, "TTWToQQ/"), 0.40620, ]
