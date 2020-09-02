@@ -38,7 +38,7 @@ samples['QCD_HT2000toInf'] = [os.path.join(userpath, MC_dir, "QCD_HT2000toInf/")
 #samples['QCD'] = [samples['QCD_HT50to100'], samples['QCD_HT100to200'], samples['QCD_HT200to300'], samples['QCD_HT300to500'], samples['QCD_HT500to700'], samples['QCD_HT700to1000'], samples['QCD_HT1000to1500'], samples['QCD_HT1500to2000'], samples['QCD_HT2000toInf']]
 samples['QCD'] = [samples['QCD_HT500to700'], samples['QCD_HT700to1000'], samples['QCD_HT1000to1500'], samples['QCD_HT1500to2000'], samples['QCD_HT2000toInf']]
 
-'''
+
 samples['TTSingleLep_pow'] = [os.path.join(userpath, MC_dir, "TTSingleLep_pow/"), 831.762*(3*0.108)*(1-3*0.108)*2, 2678436]
 samples['TTLep_pow'] = [os.path.join(userpath, MC_dir, "TTLep_pow/"), 831.762*((3*0.108)**2), 23248235]
 
@@ -75,33 +75,34 @@ samples['DYJetsToLL_M50_HT600to800'] = [os.path.join(userpath, MC_dir, "DYJetsTo
 samples['DYJetsToLL_M50_HT800to1200'] = [os.path.join(userpath, MC_dir, "DYJetsToLL_M50_HT800to1200/"), 0.6304*1.23, ]
 samples['DYJetsToLL_M50_HT1200to2500'] = [os.path.join(userpath, MC_dir, "DYJetsToLL_M50_HT1200to2500/"), 0.1514*1.23, ]
 samples['DYJetsToLL_M50_HT2500toInf'] = [os.path.join(userpath, MC_dir, "DYJetsToLL_M50_HT2500toInf/"), 0.003565*1.23, ]
-samples['DYJetsToLL_M50'] = [samples['DYJetsToLL_M50_HT100to200'], samples['DYJetsToLL_M50_HT200to400'], samples['DYJetsToLL_M50_HT400to600'], samples['DYJetsToLL_M50_HT600to800'], samples['DYJetsToLL_M50_HT800to1200'], samples['DYJetsToLL_M50_HT1200to2500'], samples['DYJetsToLL_M50_HT2500toInf']]
+#samples['DYJetsToLL_M50'] = [samples['DYJetsToLL_M50_HT100to200'], samples['DYJetsToLL_M50_HT200to400'], samples['DYJetsToLL_M50_HT400to600'], samples['DYJetsToLL_M50_HT600to800'], samples['DYJetsToLL_M50_HT800to1200'], samples['DYJetsToLL_M50_HT1200to2500'], samples['DYJetsToLL_M50_HT2500toInf']]
 samples['DYJetsToLL_M5to50_HT100to200'] = [os.path.join(userpath, MC_dir, "DYJetsToLL_M5to50_HT100to200_comb/"), 224.2, ]
 samples['DYJetsToLL_M5to50_HT200to400'] = [os.path.join(userpath, MC_dir, "DYJetsToLL_M5to50_HT200to400_comb/"), 37.2, ]
 samples['DYJetsToLL_M5to50_HT400to600'] = [os.path.join(userpath, MC_dir, "DYJetsToLL_M5to50_HT400to600_comb/"), 3.581, ]
 samples['DYJetsToLL_M5to50_HT600toInf'] = [os.path.join(userpath, MC_dir, "DYJetsToLL_M5to50_HT600toInf/"), 1.124, ]
-samples['DYJetsToLL_M5to50'] = [samples['DYJetsToLL_M5to50_HT100to200'], samples['DYJetsToLL_M5to50_HT200to400'], samples['DYJetsToLL_M5to50_HT400to600'], samples['DYJetsToLL_M5to50_HT600toInf']]
+#samples['DYJetsToLL_M5to50'] = [samples['DYJetsToLL_M5to50_HT100to200'], samples['DYJetsToLL_M5to50_HT200to400'], samples['DYJetsToLL_M5to50_HT400to600'], samples['DYJetsToLL_M5to50_HT600toInf']]
 samples['DYJetsToLL'] = [samples['DYJetsToLL_M50_HT100to200'], samples['DYJetsToLL_M50_HT200to400'], samples['DYJetsToLL_M50_HT400to600'], samples['DYJetsToLL_M50_HT600to800'], samples['DYJetsToLL_M50_HT800to1200'], samples['DYJetsToLL_M50_HT1200to2500'], samples['DYJetsToLL_M50_HT2500toInf'], samples['DYJetsToLL_M5to50_HT100to200'], samples['DYJetsToLL_M5to50_HT200to400'], samples['DYJetsToLL_M5to50_HT400to600'], samples['DYJetsToLL_M5to50_HT600toInf']]
 
 samples['TTWToLNu'] = [os.path.join(userpath, MC_dir, "TTWToLNu_ext2/"), 0.2043, ]
 samples['TTWToQQ'] = [os.path.join(userpath, MC_dir, "TTWToQQ/"), 0.40620, ]
 samples['TTZ_LO'] = [os.path.join(userpath, MC_dir, "TTZ_LO/"), 0.5297/0.692, ]
-samples['TTZToLLNuNu_m1to10'] = [os.path.join(userpath, MC_dir, "TTZToLLNuNu_m1to10/"), 0.0493, ]
-samples['TTZToQQ'] = [os.path.join(userpath, MC_dir, "TTZToQQ/"), 0.5297, ]
-samples['TTV'] = [ samples['TTWToLNu'], samples['TTWToQQ'], samples['TTZ_LO'], samples['TTZToLLNuNu_m1to10'], samples['TTZToQQ']]
+#samples['TTZToLLNuNu_m1to10'] = [os.path.join(userpath, MC_dir, "TTZToLLNuNu_m1to10/"), 0.0493, ]
+#samples['TTZToQQ'] = [os.path.join(userpath, MC_dir, "TTZToQQ/"), 0.5297, ]
+#samples['TTV'] = [ samples['TTWToLNu'], samples['TTWToQQ'], samples['TTZ_LO'], samples['TTZToLLNuNu_m1to10'], samples['TTZToQQ']]
+samples['TTV'] = [ samples['TTWToLNu'], samples['TTWToQQ'], samples['TTZ_LO']]
 
 samples['WWTo2L2Nu'] = [os.path.join(userpath, MC_dir, "WWTo2L2Nu/"), 12.178, ]
 samples['WWToLNuQQ'] = [os.path.join(userpath, MC_dir, "WWToLNuQQ/"), 49.997, ]
 samples['WZTo1L1Nu2Q'] = [os.path.join(userpath, MC_dir, "WZTo1L1Nu2Q/"), 10.71, ]
 samples['WZTo1L3Nu'] = [os.path.join(userpath, MC_dir, "WZTo1L3Nu/"), (47.13)*(3*0.108)*(0.2), ]
 samples['WZTo2L2Q'] = [os.path.join(userpath, MC_dir, "WZTo2L2Q/"), 5.60, ]
-samples['WZTo3LNu'] = [os.path.join(userpath, MC_dir, "WZTo3LNu_ext/"), 4.42965, ]
+samples['WZTo3LNu'] = [os.path.join(userpath, MC_dir, "WZTo3LNu/"), 4.42965, ]
 samples['ZZTo2L2Nu'] = [os.path.join(userpath, MC_dir, "ZZTo2L2Nu/"), 0.564, ]
 samples['ZZTo2L2Q'] = [os.path.join(userpath, MC_dir, "ZZTo2L2Q/"), 3.28, ]
 samples['ZZTo2Q2Nu'] = [os.path.join(userpath, MC_dir, "ZZTo2Q2Nu/"), 4.04, ]
 samples['ZZTo4L'] = [os.path.join(userpath, MC_dir, "ZZTo4L/"), 1.256*1.1, ]
 samples['VV'] = [samples['WWTo2L2Nu'], samples['WWToLNuQQ'], samples['WZTo1L1Nu2Q'], samples['WZTo1L3Nu'], samples['WZTo2L2Q'], samples['WZTo3LNu'], samples['ZZTo2L2Nu'], samples['ZZTo2L2Q'], samples['ZZTo2Q2Nu'], samples['ZZTo4L']]
-'''
+
 #Data
 
 #JetHT
