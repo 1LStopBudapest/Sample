@@ -18,11 +18,12 @@ samples = {}
 
 samples['Stop_500_480_prompt_fast'] = [os.path.join(userpath, Signal_dir, "Stop_500_480/prompt/FastSim/"), 0.609, 333881]
 samples['Stop_500_480_prompt_full'] = [os.path.join(userpath, Signal_dir, "Stop_500_480/prompt/FullSim/"), 0.609, 364869]
-samples['Stop_500_480_tau10mm_fast'] = [os.path.join(userpath, Signal_dir, "Stop_500_480/tau10mm/localMini/FastSim/"), 0.609, 339618]
-samples['Stop_500_480_tau10mm_full'] = [os.path.join(userpath, Signal_dir, "Stop_500_480/tau10mm/localMini/FullSim/"), 0.609, 377544]
-samples['Stop_500_480_tau100mm_fast'] = [os.path.join(userpath, Signal_dir, "Stop_500_480/tau100mm/localMini/FastSim/"), 0.609, 232463]
-samples['Stop_500_480_tau100mm_full'] = [os.path.join(userpath, Signal_dir, "Stop_500_480/tau100mm/localMini/FullSim/"), 0.609, 279466] 
-
+samples['Stop_500_480_tau10mm_fast'] = [os.path.join(userpath, Signal_dir, "Stop_500_480/tau10mm/FastSim/"), 0.609, 339618]
+samples['Stop_500_480_tau10mm_full'] = [os.path.join(userpath, Signal_dir, "Stop_500_480/tau10mm/FullSim/"), 0.609, 377544]
+samples['Stop_500_480_tau100mm_fast'] = [os.path.join(userpath, Signal_dir, "Stop_500_480/tau100mm/FastSim/"), 0.609, 232463]
+samples['Stop_500_480_tau100mm_full'] = [os.path.join(userpath, Signal_dir, "Stop_500_480/tau100mm/FullSim/"), 0.609, 279466] 
+samples['Stop_500_480_tau5mm_fast'] = [os.path.join(userpath, Signal_dir, "Stop_500_480/tau5mm/FastSim/"), 0.609, 102336]
+samples['Stop_500_480_tau5mm_full'] = [os.path.join(userpath, Signal_dir, "Stop_500_480/tau5mm/FullSim/"), 0.609, 72715]
 #PostProcessed Samples
 #BK MC
 
