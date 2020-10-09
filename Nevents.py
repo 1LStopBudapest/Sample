@@ -8,7 +8,7 @@ def get_parser():
     '''
     import argparse
     argParser = argparse.ArgumentParser(description = "Argument parser")
-    argParser.add_argument('--sample',           action='store',                     type=str,            default='TTSingleLep_pow',                                help="Which sample?" )
+    argParser.add_argument('--sample',           action='store',                     type=str,            default='Stop_500_480_prompt_fast',                                help="Which sample?" )
     
     return argParser
 
