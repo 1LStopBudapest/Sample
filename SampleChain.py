@@ -25,12 +25,16 @@ class SampleChain():
     def getchain(self):
         ch = ROOT.TChain(self.treename)
         filelist = []
-        if isinstance(self.samplelist[self.sample][0], types.ListType):
-            for s in self.samplelist[self.sample]:
-                filelist.extend(self.getfilelist(s[0]))
+        if 'T2tt' in self.sample:
+            filelist.append(self.samplelist['T2tt'][0] + self.sample + '.root')
+            self.addtochain(ch, filelist, 0, 1)
         else:
-            filelist = self.getfilelist(self.samplelist[self.sample][0])
-        self.addtochain(ch, filelist, self.startfile, self.filestorun)
+            if isinstance(self.samplelist[self.sample][0], types.ListType):
+                for s in self.samplelist[self.sample]:
+                    filelist.extend(self.getfilelist(s[0]))
+            else:
+                filelist = self.getfilelist(self.samplelist[self.sample][0])
+            self.addtochain(ch, filelist, self.startfile, self.filestorun)
         return ch
 
     @staticmethod
