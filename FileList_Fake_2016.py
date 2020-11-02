@@ -4,7 +4,7 @@ from Dir import userpath
 
 MC_dir = "PostProcessedNtuple/2016/FakeRate/"
 Data_dir = MC_dir
-Signal_dir = "StopSignal/"
+Signal_dir = "PostProcessedNtuple/2016/MetSingleLep/"
 
 samples = {}
 #samples[samplename] = [path, Xsec, Nevents].
@@ -16,15 +16,10 @@ samples = {}
 #https://github.com/HephyAnalysisSW/Samples/blob/master/nanoAOD/python/Summer16_14Dec2018.py
 #postprocessed ntuples are stored at /eos/cms/store/group/phys_susy/hephy/StopsCompressed/nanoTuples/
 
-samples['Stop_500_480_prompt_fast'] = [os.path.join(userpath, Signal_dir, "Stop_500_480/prompt/FastSim/"), 0.609, 333881]
-samples['Stop_500_480_prompt_full'] = [os.path.join(userpath, Signal_dir, "Stop_500_480/prompt/FullSim/"), 0.609, 364869]
-samples['Stop_500_480_tau10mm_fast'] = [os.path.join(userpath, Signal_dir, "Stop_500_480/tau10mm/FastSim/"), 0.609, 339618]
-samples['Stop_500_480_tau10mm_full'] = [os.path.join(userpath, Signal_dir, "Stop_500_480/tau10mm/FullSim/"), 0.609, 377544]
-samples['Stop_500_480_tau100mm_fast'] = [os.path.join(userpath, Signal_dir, "Stop_500_480/tau100mm/FastSim/"), 0.609, 232463]
-samples['Stop_500_480_tau100mm_full'] = [os.path.join(userpath, Signal_dir, "Stop_500_480/tau100mm/FullSim/"), 0.609, 279466] 
-samples['Stop_500_480_tau5mm_fast'] = [os.path.join(userpath, Signal_dir, "Stop_500_480/tau5mm/FastSim/"), 0.609, 102336]
-samples['Stop_500_480_tau5mm_full'] = [os.path.join(userpath, Signal_dir, "Stop_500_480/tau5mm/FullSim/"), 0.609, 72715]
+
 #PostProcessed Samples
+samples['T2tt'] = [os.path.join(userpath, Signal_dir, "T2tt/"), ]
+
 #BK MC
 
 samples['QCD_HT50to100'] = [os.path.join(userpath, MC_dir, "QCD_HT50to100/"), 246400000.0, ]
