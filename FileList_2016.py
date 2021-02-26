@@ -5,10 +5,10 @@ from Dir import userpath
 MC_dir = "PostProcessedNtuple/2016/MetSingleLep/"
 Data_dir = MC_dir
 Signal_dir = MC_dir
-Fullsim0_dir = "StopSignal/Stop_500_480/prompt/"
-Fullsim5_dir = "StopSignal/Stop_500_480/tau5mm/"
-Fullsim10_dir = "StopSignal/Stop_500_480/tau10mm/"
-Fullsim100_dir = "StopSignal/Stop_500_480/tau100mm/"
+StopSignal0_dir = "StopSignal/Stop_500_480/prompt/"
+StopSignal5_dir = "StopSignal/Stop_500_480/tau5mm/"
+StopSignal10_dir = "StopSignal/Stop_500_480/tau10mm/"
+StopSignal100_dir = "StopSignal/Stop_500_480/tau100mm/"
 
 samples = {}
 #samples[samplename] = [path, Xsec, Nevents].
@@ -21,14 +21,14 @@ samples = {}
 #postprocessed ntuples are stored at /eos/cms/store/group/phys_susy/hephy/StopsCompressed/nanoTuples/
 
 
-
-samples['T2tt'] = [os.path.join(userpath, Signal_dir, "T2tt/"), ]
-
 # Full Sim samples for EleRecoStudy
-samples['FullSim0'] = [os.path.join(userpath, Fullsim0_dir, "FullSim/"), ]
-samples['FullSim5'] = [os.path.join(userpath, Fullsim5_dir, "FullSim/"), ]
-samples['FullSim10'] = [os.path.join(userpath, Fullsim10_dir, "FullSim/"), ]
-samples['FullSim100'] = [os.path.join(userpath, Fullsim100_dir, "FullSim/"), ]
+samples['FullSim0'] = [os.path.join(userpath, StopSignal0_dir, "FullSim/"), ]
+samples['FullSim5'] = [os.path.join(userpath, StopSignal5_dir, "FullSim/"), ]
+samples['FullSim10'] = [os.path.join(userpath, StopSignal10_dir, "FullSim/"), ]
+samples['FullSim100'] = [os.path.join(userpath, StopSignal100_dir, "FullSim/"), ]
+
+# T2tt sample
+samples['T2tt'] = [os.path.join(userpath, Signal_dir, "T2tt/"), ]
 
 #PostProcessed Samples
 #BK MC
