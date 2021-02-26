@@ -5,6 +5,10 @@ from Dir import userpath
 MC_dir = "PostProcessedNtuple/2016/MetSingleLep/"
 Data_dir = MC_dir
 Signal_dir = MC_dir
+Fullsim0_dir = "StopSignal/Stop_500_480/prompt/"
+Fullsim5_dir = "StopSignal/Stop_500_480/tau5mm/"
+Fullsim10_dir = "StopSignal/Stop_500_480/tau10mm/"
+Fullsim100_dir = "StopSignal/Stop_500_480/tau100mm/"
 
 samples = {}
 #samples[samplename] = [path, Xsec, Nevents].
@@ -17,9 +21,16 @@ samples = {}
 #postprocessed ntuples are stored at /eos/cms/store/group/phys_susy/hephy/StopsCompressed/nanoTuples/
 
 
-#PostProcessed Samples
+
 samples['T2tt'] = [os.path.join(userpath, Signal_dir, "T2tt/"), ]
 
+# Full Sim samples for EleRecoStudy
+samples['FullSim0'] = [os.path.join(userpath, Fullsim0_dir, "FullSim/"), ]
+samples['FullSim5'] = [os.path.join(userpath, Fullsim5_dir, "FullSim/"), ]
+samples['FullSim10'] = [os.path.join(userpath, Fullsim10_dir, "FullSim/"), ]
+samples['FullSim100'] = [os.path.join(userpath, Fullsim100_dir, "FullSim/"), ]
+
+#PostProcessed Samples
 #BK MC
 samples['TTSingleLep_pow'] = [os.path.join(userpath, MC_dir, "TTSingleLep_pow/"), 831.762*(3*0.108)*(1-3*0.108)*2, 2678436]
 samples['TTLep_pow'] = [os.path.join(userpath, MC_dir, "TTLep_pow/"), 831.762*((3*0.108)**2), 23248235]
