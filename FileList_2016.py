@@ -26,6 +26,8 @@ samples['FullSim0'] = [os.path.join(userpath, StopSignal0_dir, "FullSim/"), ]
 samples['FullSim5'] = [os.path.join(userpath, StopSignal5_dir, "FullSim/"), ]
 samples['FullSim10'] = [os.path.join(userpath, StopSignal10_dir, "FullSim/"), ]
 samples['FullSim100'] = [os.path.join(userpath, StopSignal100_dir, "FullSim/"), ]
+samples['FullSim100m'] = [os.path.join(userpath, StopSignal100_dir, "FullSim_Mod1/"), ]
+samples['FullSim100m2'] = [os.path.join(userpath, StopSignal100_dir, "FullSim_Mod2/File/"), ]
 
 # T2tt sample
 samples['T2tt'] = [os.path.join(userpath, Signal_dir, "T2tt/"), ]
