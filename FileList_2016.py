@@ -5,10 +5,8 @@ from Dir import userpath
 MC_dir = "PostProcessedNtuple/2016/MetSingleLep/"
 Data_dir = MC_dir
 Signal_dir = MC_dir
-StopSignal0_dir = "StopSignal/Stop_500_480/prompt/"
-StopSignal5_dir = "StopSignal/Stop_500_480/tau5mm/"
-StopSignal10_dir = "StopSignal/Stop_500_480/tau10mm/"
-StopSignal100_dir = "StopSignal/Stop_500_480/tau100mm/"
+StopSignal_500_480_dir = "StopSignal/Stop_500_480/"
+StopSignal_500_485_dir = "StopSignal/Stop_500_485/"
 
 samples = {}
 #samples[samplename] = [path, Xsec, Nevents].
@@ -22,12 +20,15 @@ samples = {}
 
 
 # Full Sim samples for EleRecoStudy
-samples['FullSim0'] = [os.path.join(userpath, StopSignal0_dir, "FullSim/"), ]
-samples['FullSim5'] = [os.path.join(userpath, StopSignal5_dir, "FullSim/"), ]
-samples['FullSim10'] = [os.path.join(userpath, StopSignal10_dir, "FullSim/"), ]
-samples['FullSim100'] = [os.path.join(userpath, StopSignal100_dir, "FullSim/"), ]
-samples['FullSim100m'] = [os.path.join(userpath, StopSignal100_dir, "FullSim_Mod1/"), ]
-samples['FullSim100m2'] = [os.path.join(userpath, StopSignal100_dir, "FullSim_Mod2/File/"), ]
+samples['FullSim0'] = [os.path.join(userpath, StopSignal_500_480_dir, "prompt/FullSim/"), ]
+samples['FullSim5'] = [os.path.join(userpath, StopSignal_500_480_dir, "tau5mm/FullSim/"), ]
+samples['FullSim10'] = [os.path.join(userpath, StopSignal_500_480_dir, "tau10mm/FullSim/"), ]
+samples['FullSim100'] = [os.path.join(userpath, StopSignal_500_480_dir, "tau100mm/FullSim/"), ]
+samples['FullSim100m'] = [os.path.join(userpath, StopSignal_500_480_dir, "tau100mm/FullSim_Mod1/"), ]
+samples['FullSim100m2'] = [os.path.join(userpath, StopSignal_500_480_dir, "tau100mm/FullSim_Mod2/File/"), ]
+
+samples['UL17_Full99mm'] = [os.path.join(userpath, StopSignal_500_485_dir, "Full/"), ]
+samples['UL17_Fast99mm'] = [os.path.join(userpath, StopSignal_500_485_dir, "Fast/"), ]
 
 # T2tt sample
 samples['T2tt'] = [os.path.join(userpath, Signal_dir, "T2tt/"), ]
