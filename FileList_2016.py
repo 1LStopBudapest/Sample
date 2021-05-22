@@ -37,6 +37,7 @@ samples['T2tt'] = [os.path.join(userpath, Signal_dir, "T2tt/"), ]
 #BK MC
 samples['TTSingleLep_pow'] = [os.path.join(userpath, MC_dir, "TTSingleLep_pow/"), 831.762*(3*0.108)*(1-3*0.108)*2, 2678436]
 samples['TTLep_pow'] = [os.path.join(userpath, MC_dir, "TTLep_pow/"), 831.762*((3*0.108)**2), 23248235]
+samples['TTbar'] = [samples['TTSingleLep_pow'], samples['TTLep_pow']]
 
 samples['T_tch_pow'] = [os.path.join(userpath, MC_dir, "T_tch_pow/"), 136.02, ]
 samples['TBar_tch_pow'] = [os.path.join(userpath, MC_dir, "TBar_tch_pow/"), 80.95, ]
