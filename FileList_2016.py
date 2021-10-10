@@ -46,6 +46,7 @@ samples['T2tt'] = [os.path.join(userpath, Signal_dir, "T2tt/"), ]
 #BK MC
 samples['TTSingleLep_pow'] = [os.path.join(userpath, MC_dir, "TTSingleLep_pow/"), 831.762*(3*0.108)*(1-3*0.108)*2, 2678436]
 samples['TTLep_pow'] = [os.path.join(userpath, MC_dir, "TTLep_pow/"), 831.762*((3*0.108)**2), 23248235]
+samples['TTbar'] = [samples['TTSingleLep_pow'], samples['TTLep_pow']]
 
 samples['T_tch_pow'] = [os.path.join(userpath, MC_dir, "T_tch_pow/"), 136.02, ]
 samples['TBar_tch_pow'] = [os.path.join(userpath, MC_dir, "TBar_tch_pow/"), 80.95, ]
@@ -159,3 +160,4 @@ samples['JetHT_Run2016F'] = [os.path.join(userpath, Data_dir, "JetHT_Run2016F_17
 samples['JetHT_Run2016G'] = [os.path.join(userpath, Data_dir, "JetHT_Run2016G_17Jul2018/"), 1.00, 5150593]
 samples['JetHT_Run2016H'] = [os.path.join(userpath, Data_dir, "JetHT_Run2016H_17Jul2018/"), 1.00, 6358426]
 samples['JetHT_Data'] = [samples['JetHT_Run2016B'], samples['JetHT_Run2016C'], samples['JetHT_Run2016D'], samples['JetHT_Run2016E'], samples['JetHT_Run2016F'], samples['JetHT_Run2016G'], samples['JetHT_Run2016H']]
+
