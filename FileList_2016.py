@@ -7,6 +7,8 @@ Data_dir = MC_dir
 Signal_dir = MC_dir
 StopSignal_500_480_dir = "StopSignal/Stop_500_480/"
 StopSignal_500_485_dir = "StopSignal/Stop_500_485/"
+StopSignal_500_490_dir = "StopSignal/Stop_500_490/"
+V9_nanoAOD_500_485_dir = "StopSignal/V9/Stop_500_485/"
 
 samples = {}
 #samples[samplename] = [path, Xsec, Nevents].
@@ -29,6 +31,13 @@ samples['FullSim100m2'] = [os.path.join(userpath, StopSignal_500_480_dir, "tau10
 
 samples['UL17_Full99mm'] = [os.path.join(userpath, StopSignal_500_485_dir, "Full/"), ]
 samples['UL17_Fast99mm'] = [os.path.join(userpath, StopSignal_500_485_dir, "Fast/"), ]
+samples['UL17_Full59mm'] = [os.path.join(userpath, StopSignal_500_485_dir, "59mm/Full/"), ]
+samples['UL17_Fast59mm'] = [os.path.join(userpath, StopSignal_500_485_dir, "59mm/Fast/"), ]
+samples['UL17_Full966mm'] = [os.path.join(userpath, StopSignal_500_490_dir, "UL17_966mm/Full/"), ]
+samples['UL17_Fast966mm'] = [os.path.join(userpath, StopSignal_500_490_dir, "UL17_966mm/Fast/"), ]
+
+samples['UL17V9_Full99mm'] = [os.path.join(userpath, V9_nanoAOD_500_485_dir, "99mm/FullSim/"), ]
+ 
 
 # T2tt sample
 samples['T2tt'] = [os.path.join(userpath, Signal_dir, "T2tt/"), ]
