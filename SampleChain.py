@@ -3,7 +3,7 @@ import ROOT
 import subprocess
 import types
 import FileList_2016
-import FileList_Fake_2016
+import FileList_Fake_2016_janik
 
 class SampleChain():
     luminosity_2016           = 35922.0
@@ -16,7 +16,7 @@ class SampleChain():
         self.filestorun = filestorun
         self.treename = treename
         if year==2016:
-            self.samplelist = FileList_Fake_2016.samples if 'fake' in proc else FileList_2016.samples
+            self.samplelist = FileList_Fake_2016_janik.samples if 'fake' in proc else FileList_2016.samples
         elif year==2017:
             self.samplelist = FileList_Fake_2017.samples if 'fake' in proc else FileList_2017.samples
         else:
