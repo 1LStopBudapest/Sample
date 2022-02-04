@@ -6,7 +6,7 @@ import FileList_2016
 import FileList_Fake_2016_janik
 
 class SampleChain():
-    luminosity_2016           = 35922.0
+    luminosity_2016           = 0.007492230
     luminosity_2017           = 41856.0
     luminosity_2018           = 58905.0
     
