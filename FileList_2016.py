@@ -382,15 +382,15 @@ samples['UL16PostVFP_Sig_Displaced_350_335'] = [os.path.join(userpath, UL16PostV
 samples['UL16PostVFP_Sig_Displaced_400_380'] = [os.path.join(userpath, UL16PostVFPStopSignal_dir, "Displaced/SMS_T2tt_LL_mStop_400_mLSP_380/"), ]
 samples['UL16PostVFP_Sig_Displaced'] = [samples['UL16PostVFP_Sig_Displaced_300_290'], samples['UL16PostVFP_Sig_Displaced_350_335'], samples['UL16PostVFP_Sig_Displaced_400_380']]
 
-samples['UL16PostVFP_Sig_Prompt_500_420'] = [os.path.join(userpath, UL16PostVFPStopSignal_dir, "Prompt/SMS_T2tt_LL_mStop_500_mLSP_420/"), ]
-samples['UL16PostVFP_Sig_Prompt_500_450'] = [os.path.join(userpath, UL16PostVFPStopSignal_dir, "Prompt/SMS_T2tt_LL_mStop_500_mLSP_450/"), ]
-samples['UL16PostVFP_Sig_Prompt_500_470'] = [os.path.join(userpath, UL16PostVFPStopSignal_dir, "Prompt/SMS_T2tt_LL_mStop_500_mLSP_470/"), ]
+samples['UL16PostVFP_Sig_Prompt_500_420'] = [os.path.join(userpath, UL16PostVFPStopSignal_dir, "Prompt/SMS_T2tt_mStop_500_mLSP_420/"), ]
+samples['UL16PostVFP_Sig_Prompt_500_450'] = [os.path.join(userpath, UL16PostVFPStopSignal_dir, "Prompt/SMS_T2tt_mStop_500_mLSP_450/"), ]
+samples['UL16PostVFP_Sig_Prompt_500_470'] = [os.path.join(userpath, UL16PostVFPStopSignal_dir, "Prompt/SMS_T2tt_mStop_500_mLSP_470/"), ]
 
 
 samples['UL16PreVFP_Sig_Displaced_300_290'] = [os.path.join(userpath, UL16PreVFPStopSignal_dir, "Displaced/SMS_T2tt_LL_mStop_300_mLSP_290/"), ]
 samples['UL16PreVFP_Sig_Displaced_350_335'] = [os.path.join(userpath, UL16PreVFPStopSignal_dir, "Displaced/SMS_T2tt_LL_mStop_350_mLSP_335/"), ]
 samples['UL16PreVFP_Sig_Displaced_400_380'] = [os.path.join(userpath, UL16PreVFPStopSignal_dir, "Displaced/SMS_T2tt_LL_mStop_400_mLSP_380/"), ]
 
-samples['UL16PreVFP_Sig_Prompt_500_420'] = [os.path.join(userpath, UL16PreVFPStopSignal_dir, "Prompt/SMS_T2tt_LL_mStop_500_mLSP_420/"), ]
-samples['UL16PreVFP_Sig_Prompt_500_450'] = [os.path.join(userpath, UL16PreVFPStopSignal_dir, "Prompt/SMS_T2tt_LL_mStop_500_mLSP_450/"), ]
-samples['UL16PreVFP_Sig_Prompt_500_470'] = [os.path.join(userpath, UL16PreVFPStopSignal_dir, "Prompt/SMS_T2tt_LL_mStop_500_mLSP_470/"), ]
+samples['UL16PreVFP_Sig_Prompt_500_420'] = [os.path.join(userpath, UL16PreVFPStopSignal_dir, "Prompt/SMS_T2tt_mStop_500_mLSP_420/"), ]
+samples['UL16PreVFP_Sig_Prompt_500_450'] = [os.path.join(userpath, UL16PreVFPStopSignal_dir, "Prompt/SMS_T2tt_mStop_500_mLSP_450/"), ]
+samples['UL16PreVFP_Sig_Prompt_500_470'] = [os.path.join(userpath, UL16PreVFPStopSignal_dir, "Prompt/SMS_T2tt_mStop_500_mLSP_470/"), ]
