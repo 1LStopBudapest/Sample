@@ -4,24 +4,32 @@ import subprocess
 import types
 import FileList_2016
 import FileList_Fake_2016_janik
+import FileList_UL2016PreVFP
+import FileList_UL2016PostVFP
 
 class SampleChain():
     luminosity_2016_forTL     = 0.007492230
+    luminosity_2016PreVFP     = 19520.0
+    luminosity_2016PostVFP     = 16810.0
     luminosity_2016           = 35922.0
     luminosity_2017           = 41856.0
     luminosity_2018           = 58905.0
     
-    def __init__(self, sample, startfile, filestorun, year=2016, proc = "other", treename = "Events"):
+    def __init__(self, sample, startfile, filestorun, year='2017', proc = "other", treename = "Events"):
         self.sample = sample
         self.startfile = startfile
         self.filestorun = filestorun
         self.treename = treename
-        if year==2016:
+        if year=='2016PreVFP':
+            self.samplelist = FileList_Fake_2016_janik.samples if 'fake' in proc else FileList_UL2016PreVFP.samples
+        elif year=='2016PostVFP':
+            self.samplelist = FileList_Fake_2016_janik.samples if 'fake' in proc else FileList_UL2016PostVFP.samples
+        elif year=='2016':
             self.samplelist = FileList_Fake_2016_janik.samples if 'fake' in proc else FileList_2016.samples
-        elif year==2017:
-            self.samplelist = FileList_Fake_2017.samples if 'fake' in proc else FileList_2017.samples
+        elif year=='2017':
+            self.samplelist = FileList_Fake_2017.samples if 'fake' in proc else FileList_UL2017.samples
         else:
-            self.samplelist = FileList_Fake_2018.samples if 'fake' in proc else FileList_2018.samples
+            self.samplelist = FileList_Fake_2018.samples if 'fake' in proc else FileList_UL2018.samples
             
     def getchain(self):
         ch = ROOT.TChain(self.treename)
