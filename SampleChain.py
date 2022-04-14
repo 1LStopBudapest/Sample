@@ -6,10 +6,19 @@ import FileList_2016
 import FileList_Fake_2016_janik
 
 class SampleChain():
-    luminosity_2016_forTL     = 0.007492230
-    luminosity_2016           = 35922.0
-    luminosity_2017           = 41856.0
-    luminosity_2018           = 58905.0
+    luminosity_2016_HLT_Mu3_PFJet40                            = 0.007492230 # all values /fb
+    luminosity_2016_HLT_Mu8                                    = 0.003978578
+    luminosity_2016_HLT_Mu17                                   = 0.285902233
+    luminosity_2016_HLT_Mu27                                   = 0.253220763
+    luminosity_2016_HLT_PFJet40                                = 0.000267102
+    luminosity_2016_HLT_Ele8_CaloIdM_TrackIdM_PFJet30          = 0.007065194
+    luminosity_2016_HLT_Ele17_CaloIdM_TrackIdM_PFJet30         = 0.063442490
+    luminosity_2016_HLT_Ele23_CaloIdM_TrackIdM_PFJet30         = 0.063442490
+    luminosity_2016_preVFP                                     = 19.52  # https://twiki.cern.ch/twiki/bin/viewauth/CMS/PdmVRun2LegacyAnalysis
+    luminosity_2016_postVFP                                    = 16.81  # https://twiki.cern.ch/twiki/bin/viewauth/CMS/PdmVRun2LegacyAnalysis
+    luminosity_2016                                            = 36.333380074 
+    luminosity_2017                                            = 41.479680529
+    luminosity_2018                                            = 59.832475339
     
     def __init__(self, sample, startfile, filestorun, year=2016, proc = "other", treename = "Events"):
         self.sample = sample
