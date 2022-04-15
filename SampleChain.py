@@ -8,13 +8,22 @@ import FileList_UL2016PreVFP
 import FileList_UL2016PostVFP
 
 class SampleChain():
-    luminosity_2016_forTL     = 0.007492230
+    #values /pb
     luminosity_2016PreVFP     = 19520.0
     luminosity_2016PostVFP     = 16810.0
-    luminosity_2016           = 35922.0
+    luminosity_2016           = 36330.0
     luminosity_2017           = 41856.0
     luminosity_2018           = 58905.0
-    
+    # all values /fb
+    luminosity_2016_HLT_Mu3_PFJet40                            = 0.007492230 
+    luminosity_2016_HLT_Mu8                                    = 0.003978578
+    luminosity_2016_HLT_Mu17                                   = 0.285902233
+    luminosity_2016_HLT_Mu27                                   = 0.253220763
+    luminosity_2016_HLT_PFJet40                                = 0.000267102
+    luminosity_2016_HLT_Ele8_CaloIdM_TrackIdM_PFJet30          = 0.007065194
+    luminosity_2016_HLT_Ele17_CaloIdM_TrackIdM_PFJet30         = 0.063442490
+    luminosity_2016_HLT_Ele23_CaloIdM_TrackIdM_PFJet30         = 0.063442490
+
     def __init__(self, sample, startfile, filestorun, year='2017', proc = "other", treename = "Events"):
         self.sample = sample
         self.startfile = startfile

@@ -3,7 +3,7 @@ import os, sys
 from Dir import userpath
 
 
-MC_dir = "PostProcessedNtuple/2016/UL/PreVFP/MetSingleLep"
+MC_dir = "PostProcessedNtuple/2016/UL/PreVFP/Met"
 Data_dir = MC_dir
 Signal_dir = MC_dir
 
