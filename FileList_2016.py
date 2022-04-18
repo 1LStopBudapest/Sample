@@ -43,9 +43,8 @@ samples['UL17_Fast59mm'] = [os.path.join(userpath, StopSignal_500_485_dir, "59mm
 samples['UL17_Full966mm'] = [os.path.join(userpath, StopSignal_500_490_dir, "UL17_966mm/Full/"), ]
 samples['UL17_Fast966mm'] = [os.path.join(userpath, StopSignal_500_490_dir, "UL17_966mm/Fast/"), ]
 
+# Note: these are UL17 files and may be moved soon to another samplelist under a different name
 samples['UL17V9_Full99mm'] = [os.path.join(userpath, V9_nanoAOD_500_485_dir, "99mm/FullSim/"), ]
- 
-
 samples['UL17V9_Full99mm'] = [os.path.join(userpath, V9_nanoAOD_500_485_dir, "99mm/FullSim/"), ]
 
 # temporary: BK files:
