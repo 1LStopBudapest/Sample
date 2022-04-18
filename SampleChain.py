@@ -25,17 +25,18 @@ class SampleChain():
     luminosity_2016_HLT_Ele23_CaloIdM_TrackIdM_PFJet30         = 0.063442490
 
     def __init__(self, sample, startfile, filestorun, year='2017', proc = "other", treename = "Events"):
+        year_str = str(year)
         self.sample = sample
         self.startfile = startfile
         self.filestorun = filestorun
         self.treename = treename
-        if year=='2016PreVFP':
+        if year_str=='2016PreVFP':
             self.samplelist = FileList_Fake_2016_janik.samples if 'fake' in proc else FileList_UL2016PreVFP.samples
-        elif year=='2016PostVFP':
+        elif year_str=='2016PostVFP':
             self.samplelist = FileList_Fake_2016_janik.samples if 'fake' in proc else FileList_UL2016PostVFP.samples
-        elif year=='2016':
+        elif year_str=='2016':
             self.samplelist = FileList_Fake_2016_janik.samples if 'fake' in proc else FileList_2016.samples
-        elif year=='2017':
+        elif year_str=='2017':
             self.samplelist = FileList_Fake_2017.samples if 'fake' in proc else FileList_UL2017.samples
         else:
             self.samplelist = FileList_Fake_2018.samples if 'fake' in proc else FileList_UL2018.samples
