@@ -70,12 +70,12 @@ samples['QCD_HT2000toInf'] = [os.path.join(userpath, MC_dir, "QCD_HT2000toInf/")
 samples['QCD_HT2000toInf_madgraph'] = [os.path.join(userpath, MC_dir, "QCD_HT2000toInf_madgraph/"), 25.25, 392968]
 samples['QCD'] = [samples['QCD_HT50to100'],samples['QCD_HT100to200'],samples['QCD_HT200to300'],samples['QCD_HT200to300_madgraph'],samples['QCD_HT300to500_madgraph'],samples['QCD_HT500to700_madgraph'],samples['QCD_HT500to700_madgraph'], samples['QCD_HT1000to1500'],samples['QCD_HT1500to2000'],samples['QCD_HT2000toInf'],samples['QCD_HT2000toInf_madgraph'] ]
 
-samples['ZJetsToNuNu_HT100to200'] = [os.path.join(userpath, MC_dir, "DYJetsToNuNu_HT100to200_comb/"), 344.9781, ]
-samples['ZJetsToNuNu_HT200to400'] = [os.path.join(userpath, MC_dir, "DTJetsToNuNu_HT200to400_comb/"), 96.3828, ]
-samples['ZJetsToNuNu_HT400to600'] = [os.path.join(userpath, MC_dir, "DYJetsToNuNu_HT400to600_comb/"), 13.4562, ]
+samples['ZJetsToNuNu_HT100to200'] = [os.path.join(userpath, MC_dir, "DYJetsToNuNu_HT100to200/"), 344.9781, ]
+samples['ZJetsToNuNu_HT200to400'] = [os.path.join(userpath, MC_dir, "DTJetsToNuNu_HT200to400/"), 96.3828, ]
+samples['ZJetsToNuNu_HT400to600'] = [os.path.join(userpath, MC_dir, "DYJetsToNuNu_HT400to600/"), 13.4562, ]
 samples['ZJetsToNuNu_HT600to800'] = [os.path.join(userpath, MC_dir, "DYJetsToNuNu_HT600to800/"), 3.96183, ]
 samples['ZJetsToNuNu_HT800to1200'] = [os.path.join(userpath, MC_dir, "DYJetsToNuNu_HT800to1200/"), 1.81302, ]
-samples['ZJetsToNuNu_HT1200to2500'] = [os.path.join(userpath, MC_dir, "DYJetsToNuNu_HT1200to2500_comb/"), 0.441078, ]
+samples['ZJetsToNuNu_HT1200to2500'] = [os.path.join(userpath, MC_dir, "DYJetsToNuNu_HT1200to2500/"), 0.441078, ]
 samples['ZJetsToNuNu_HT2500toInf'] = [os.path.join(userpath, MC_dir, "DYJetsToNuNu_HT2500toInf/"), 0.01008969, ]
 samples['ZJetsToNuNu'] = [samples['ZJetsToNuNu_HT100to200'], samples['ZJetsToNuNu_HT200to400'], samples['ZJetsToNuNu_HT400to600'], samples['ZJetsToNuNu_HT600to800'], samples['ZJetsToNuNu_HT800to1200'], samples['ZJetsToNuNu_HT1200to2500'], samples['ZJetsToNuNu_HT2500toInf']]
 
