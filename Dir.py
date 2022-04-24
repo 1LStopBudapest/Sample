@@ -15,6 +15,7 @@ if os.environ['USER'] in ['mmoussa']:
 if os.environ['USER'] in ['rabnora']:
     userpath = "/big_data/LepStop/"
     plotDir = "/home/rabnora/sandbox/Plots/"
+    Xfiles = "/home/kmandal/1LStopBudapest/AuxFiles/"
 
 if os.environ['USER'] in ['kmandal']:
     userpath = "/big_data/LepStop/"
