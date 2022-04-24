@@ -32,8 +32,8 @@ samples['Sig_Prompt_500_470'] = [os.path.join(userpath, FullSimSignal_dir, "Prom
 
 
 
-# T2tt sample fastsim
-samples['T2tt'] = [os.path.join(userpath, Signal_dir, "T2tt/"), ]
+# T2tt sample fastsim: not produced yet
+#samples['T2tt'] = [os.path.join(userpath, Signal_dir, "T2tt/"), ]
 
 # BK MC
 
@@ -98,7 +98,7 @@ samples['TTWToQQ'] = [os.path.join(userpath, MC_dir, "TTWToQQ/"), 0.40620, 61593
 #samples['TTZToQQ'] = [os.path.join(userpath, MC_dir, "TTZToQQ/"), 0.5297, ]
 samples['TTG'] = [os.path.join(userpath, MC_dir, "TTGJets/"), 3.697, ]
 #samples['TTV'] = [ samples['TTWToLNu'], samples['TTWToQQ'], samples['TTZ_LO'], samples['TTZToLLNuNu_m1to10'], samples['TTZToQQ']]
-samples['TTV'] = [ samples['TTWToLNu'], samples['TTWToQQ']]
+samples['TTV'] = [ samples['TTWToLNu'], samples['TTWToQQ'], samples['TTG']]
 
 samples['WWTo2L2Nu'] = [os.path.join(userpath, MC_dir, "WWTo2L2Nu/"), 12.178, 255545]
 #samples['WWToLNuQQ'] = [os.path.join(userpath, MC_dir, "WWToLNuQQ/"), 49.997, ]
