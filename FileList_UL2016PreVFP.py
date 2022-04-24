@@ -32,8 +32,8 @@ samples['Sig_Prompt_500_450'] = [os.path.join(userpath, FullSimSignal_dir, "Prom
 samples['Sig_Prompt_500_470'] = [os.path.join(userpath, FullSimSignal_dir, "Prompt/SMS_T2tt_mStop_500_mLSP_470/"), ]
 
 
-# T2tt sample fastsim
-samples['T2tt'] = [os.path.join(userpath, Signal_dir, "T2tt/"), ]
+# T2tt sample fastsim: not produced yet
+#samples['T2tt'] = [os.path.join(userpath, Signal_dir, "T2tt/"), ]
 
 
 #BK MC
