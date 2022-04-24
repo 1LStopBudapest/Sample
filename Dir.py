@@ -12,6 +12,10 @@ if os.environ['USER'] in ['mmoussa']:
     userpath = "/big_data/LepStop/"
     plotDir = "/home/mmoussa/susy/fake_rate_results/Plots/"
 
+if os.environ['USER'] in ['rabnora']:
+    userpath = "/big_data/LepStop/"
+    plotDir = "/home/rabnora/sandbox/Plots/"
+
 if os.environ['USER'] in ['kmandal']:
     userpath = "/big_data/LepStop/"
     plotDir = "/home/kmandal/1LStopAN/Plots/"
