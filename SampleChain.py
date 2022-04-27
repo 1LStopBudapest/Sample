@@ -6,6 +6,7 @@ import FileList_2016
 import FileList_Fake_2016_janik
 import FileList_UL2016PreVFP
 import FileList_UL2016PostVFP
+import FileList_Fake_UL2016PostVFP
 
 class SampleChain():
     #values /pb
@@ -31,15 +32,15 @@ class SampleChain():
         self.filestorun = filestorun
         self.treename = treename
         if year_str=='2016PreVFP':
-            self.samplelist = FileList_Fake_2016_janik.samples if 'fake' in proc else FileList_UL2016PreVFP.samples
+            self.samplelist = FileList_Fake_UL2016PreVFP.samples if 'fake' in proc else FileList_UL2016PreVFP.samples
         elif year_str=='2016PostVFP':
-            self.samplelist = FileList_Fake_2016_janik.samples if 'fake' in proc else FileList_UL2016PostVFP.samples
+            self.samplelist = FileList_Fake_UL2016PostVFP.samples if 'fake' in proc else FileList_UL2016PostVFP.samples
         elif year_str=='2016':
             self.samplelist = FileList_Fake_2016_janik.samples if 'fake' in proc else FileList_2016.samples
         elif year_str=='2017':
-            self.samplelist = FileList_Fake_2017.samples if 'fake' in proc else FileList_UL2017.samples
+            self.samplelist = FileList_Fake_UL2017.samples if 'fake' in proc else FileList_UL2017.samples
         else:
-            self.samplelist = FileList_Fake_2018.samples if 'fake' in proc else FileList_UL2018.samples
+            self.samplelist = FileList_Fake_UL2018.samples if 'fake' in proc else FileList_UL2018.samples
             
     def getchain(self):
         ch = ROOT.TChain(self.treename)
