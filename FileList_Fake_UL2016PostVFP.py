@@ -22,18 +22,25 @@ samples = {}
 #samples['T2tt'] = [os.path.join(userpath, Signal_dir, "T2tt/"), ]
 
 #MC
-"""
-samples['TTSingleLep_pow'] = [os.path.join(userpath, MC_dir, "TTSingleLep_pow/")]
-samples['TTLep_pow'] = [os.path.join(userpath, MC_dir, "TTLep_pow/")]
+
+samples['TTSingleLep_pow'] = [os.path.join(userpath, MC_dir, "TTSingleLep_pow_CP5/")]
+samples['TTLep_pow'] = [os.path.join(userpath, MC_dir, "TTLep_pow_CP5/")]
 samples['TTbar'] = [os.path.join(userpath, MC_dir, "TTbar/")]
 
-samples['WJetsToLNu_comb'] = [os.path.join(userpath, MC_dir, "WJetsToLNu_comb/")]
+samples['WJetsToLNu_comb'] = [os.path.join(userpath, MC_dir, "WJetsToLNu/")]
 
-samples['DYJetsToLL_M10to50_LO'] = [os.path.join(userpath, MC_dir, "DYJetsToLL_M10to50_LO/")]
-samples['DYJetsToLL_M50_LO_ext1_comb'] = [os.path.join(userpath, MC_dir, "DYJetsToLL_M50_LO_ext1_comb/")]
-samples['DYJetsToLL'] = [samples['DYJetsToLL_M10to50_LO'], samples['DYJetsToLL_M50_LO_ext1_comb']]
+samples['DYJetsToLL_M10to50'] = [os.path.join(userpath, MC_dir, "DYJetsToLL_M10to50_LO/")]
+samples['DYJetsToLL_M50'] = [os.path.join(userpath, MC_dir, "DYJetsToLL_M50_LO/")]
+samples['DYJetsToLL'] = [samples['DYJetsToLL_M10to50'], samples['DYJetsToLL_M50']]
 
 
+samples['T_tch_pow'] = [os.path.join(userpath, MC_dir, "T_tch_pow/"),]
+samples['TBar_tch_pow'] = [os.path.join(userpath, MC_dir, "TBar_tch_pow/"),]
+samples['T_tWch_ext'] = [os.path.join(userpath, MC_dir, "T_tWch_ext/"),]
+samples['TBar_tWch_ext'] = [os.path.join(userpath, MC_dir, "TBar_tWch_ext/"),]
+samples['ST'] = [samples['T_tch_pow'], samples['TBar_tch_pow'], samples['T_tWch_ext'], samples['TBar_tWch_ext']]
+
+"""
 samples['QCD_pt15to30'] = [os.path.join(userpath, MC_dir, "QCD_pt15to30/")]
 samples['QCD_pt30to50'] = [os.path.join(userpath, MC_dir, "QCD_pt30to50/")]
 samples['QCD_pt50to80'] = [os.path.join(userpath, MC_dir, "QCD_pt50to80/")]
