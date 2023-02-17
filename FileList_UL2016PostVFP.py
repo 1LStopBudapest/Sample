@@ -68,7 +68,7 @@ samples['QCD_HT1000to1500'] = [os.path.join(userpath, MC_dir, "QCD_HT1000to1500/
 samples['QCD_HT1500to2000'] = [os.path.join(userpath, MC_dir, "QCD_HT1500to2000/"), 20.4, 1114059]
 samples['QCD_HT2000toInf'] = [os.path.join(userpath, MC_dir, "QCD_HT2000toInf/"), 25.25, 1034862]
 samples['QCD_HT2000toInf_madgraph'] = [os.path.join(userpath, MC_dir, "QCD_HT2000toInf_madgraph/"), 25.25, 392968]
-samples['QCD'] = [samples['QCD_HT50to100'],samples['QCD_HT100to200'],samples['QCD_HT200to300'],samples['QCD_HT200to300_madgraph'],samples['QCD_HT300to500_madgraph'],samples['QCD_HT500to700_madgraph'],samples['QCD_HT500to700_madgraph'], samples['QCD_HT1000to1500'],samples['QCD_HT1500to2000'],samples['QCD_HT2000toInf'],samples['QCD_HT2000toInf_madgraph'] ]
+samples['QCD'] = [samples['QCD_HT50to100'],samples['QCD_HT100to200'],samples['QCD_HT200to300'],samples['QCD_HT200to300_madgraph'],samples['QCD_HT300to500_madgraph'],samples['QCD_HT500to700_madgraph'],samples['QCD_HT700to1000_madgraph'], samples['QCD_HT1000to1500'],samples['QCD_HT1500to2000'],samples['QCD_HT2000toInf'],samples['QCD_HT2000toInf_madgraph'] ]
 
 samples['ZJetsToNuNu_HT100to200'] = [os.path.join(userpath, MC_dir, "DYJetsToNuNu_HT100to200/"), 344.9781, ]
 samples['ZJetsToNuNu_HT200to400'] = [os.path.join(userpath, MC_dir, "DYJetsToNuNu_HT200to400/"), 96.3828, ]
