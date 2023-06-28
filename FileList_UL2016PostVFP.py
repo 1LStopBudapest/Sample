@@ -33,9 +33,9 @@ samples['Sig_Prompt_500_470_full'] = [os.path.join(userpath, FullSimSignal_dir, 
 
 #Fastsim Signals points
 
-samples['Sig_Displaced_300_290_fast'] = [os.path.join(userpath, FullSimSignal_dir, "Displaced/SMS_T2tt_LL_mStop_300_mLSP_290_FS/"), ]
-samples['Sig_Displaced_350_335_fast'] = [os.path.join(userpath, FullSimSignal_dir, "Displaced/SMS_T2tt_LL_mStop_350_mLSP_335_FS/"), ]
-samples['Sig_Displaced_400_380_fast'] = [os.path.join(userpath, FullSimSignal_dir, "Displaced/SMS_T2tt_LL_mStop_400_mLSP_380_FS/"), ]
+samples['Sig_Displaced_300_290_fast'] = [os.path.join(userpath, FastSimSignal_dir, "Displaced/SMS_T2tt_LL_mStop_300_mLSP_290_FS/"), ]
+samples['Sig_Displaced_350_335_fast'] = [os.path.join(userpath, FastSimSignal_dir, "Displaced/SMS_T2tt_LL_mStop_350_mLSP_335_FS/"), ]
+samples['Sig_Displaced_400_380_fast'] = [os.path.join(userpath, FastSimSignal_dir, "Displaced/SMS_T2tt_LL_mStop_400_mLSP_380_FS/"), ]
 
 samples['Sig_Prompt_500_420_fast'] = [os.path.join(userpath, FastSimSignal_dir, "Prompt/SMS_T2tt_mStop_500_mLSP_420_FS/"), ]
 samples['Sig_Prompt_500_450_fast'] = [os.path.join(userpath, FastSimSignal_dir, "Prompt/SMS_T2tt_mStop_500_mLSP_450_FS/"), ]
