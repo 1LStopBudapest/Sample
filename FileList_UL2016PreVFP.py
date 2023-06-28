@@ -8,7 +8,7 @@ Data_dir = MC_dir
 Signal_dir = MC_dir
 
 FullSimSignal_dir = "PostProcessedNtuple/2016/UL/PreVFP/FullsimSig/"
-
+FastSimSignal_dir = "PostProcessedNtuple/2016/UL/FastsimSig/"
 
 samples = {}
 
@@ -23,13 +23,13 @@ samples = {}
 
 #Fullsim Signals
 
-#samples['Sig_Displaced_300_290'] = [os.path.join(userpath, FullSimSignal_dir, "Displaced/SMS_T2tt_LL_mStop_300_mLSP_290/"), ]
-#samples['Sig_Displaced_350_335'] = [os.path.join(userpath, FullSimSignal_dir, "Displaced/SMS_T2tt_LL_mStop_350_mLSP_335/"), ]
-#samples['Sig_Displaced_400_380'] = [os.path.join(userpath, FullSimSignal_dir, "Displaced/SMS_T2tt_LL_mStop_400_mLSP_380/"), ]
+#samples['Sig_Displaced_300_290_full'] = [os.path.join(userpath, FullSimSignal_dir, "Displaced/SMS_T2tt_LL_mStop_300_mLSP_290/"), ]
+#samples['Sig_Displaced_350_335_full'] = [os.path.join(userpath, FullSimSignal_dir, "Displaced/SMS_T2tt_LL_mStop_350_mLSP_335/"), ]
+#samples['Sig_Displaced_400_380_full'] = [os.path.join(userpath, FullSimSignal_dir, "Displaced/SMS_T2tt_LL_mStop_400_mLSP_380/"), ]
 
-samples['Sig_Prompt_500_420'] = [os.path.join(userpath, FullSimSignal_dir, "Prompt/SMS_T2tt_mStop_500_mLSP_420/"), ]
-samples['Sig_Prompt_500_450'] = [os.path.join(userpath, FullSimSignal_dir, "Prompt/SMS_T2tt_mStop_500_mLSP_450/"), ]
-samples['Sig_Prompt_500_470'] = [os.path.join(userpath, FullSimSignal_dir, "Prompt/SMS_T2tt_mStop_500_mLSP_470/"), ]
+samples['Sig_Prompt_500_420_full'] = [os.path.join(userpath, FullSimSignal_dir, "Prompt/SMS_T2tt_mStop_500_mLSP_420/"), ]
+samples['Sig_Prompt_500_450_full'] = [os.path.join(userpath, FullSimSignal_dir, "Prompt/SMS_T2tt_mStop_500_mLSP_450/"), ]
+samples['Sig_Prompt_500_470_full'] = [os.path.join(userpath, FullSimSignal_dir, "Prompt/SMS_T2tt_mStop_500_mLSP_470/"), ]
 
 
 #Fastsim Signals points
