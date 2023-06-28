@@ -32,6 +32,17 @@ samples['Sig_Prompt_500_450'] = [os.path.join(userpath, FullSimSignal_dir, "Prom
 samples['Sig_Prompt_500_470'] = [os.path.join(userpath, FullSimSignal_dir, "Prompt/SMS_T2tt_mStop_500_mLSP_470/"), ]
 
 
+#Fastsim Signals points
+
+samples['Sig_Displaced_fast_300_290'] = [os.path.join(userpath, FullSimSignal_dir, "Displaced/SMS_T2tt_LL_mStop_300_mLSP_290_FS/"), ]
+samples['Sig_Displaced_fast_350_335'] = [os.path.join(userpath, FullSimSignal_dir, "Displaced/SMS_T2tt_LL_mStop_350_mLSP_335_FS/"), ]
+samples['Sig_Displaced_fast_400_380'] = [os.path.join(userpath, FullSimSignal_dir, "Displaced/SMS_T2tt_LL_mStop_400_mLSP_380_FS/"), ]
+
+samples['Sig_Prompt_fast_500_420'] = [os.path.join(userpath, FastSimSignal_dir, "Prompt/SMS_T2tt_mStop_500_mLSP_420_FS/"), ]
+samples['Sig_Prompt__fast_500_450'] = [os.path.join(userpath, FastSimSignal_dir, "Prompt/SMS_T2tt_mStop_500_mLSP_450_FS/"), ]
+samples['Sig_Prompt_fast_500_470'] = [os.path.join(userpath, FastSimSignal_dir, "Prompt/SMS_T2tt_mStop_500_mLSP_470_FS/"), ]
+
+
 # T2tt sample fastsim: not produced yet
 #samples['T2tt'] = [os.path.join(userpath, Signal_dir, "T2tt/"), ]
 
