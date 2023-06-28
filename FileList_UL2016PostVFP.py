@@ -7,6 +7,7 @@ Data_dir = MC_dir
 Signal_dir = MC_dir
 
 FullSimSignal_dir = "PostProcessedNtuple/2016/UL/PostVFP/FullsimSig/"
+FastSimSignal_dir = "PostProcessedNtuple/2016/UL/FastsimSig/"
 
 samples = {}
 
@@ -20,7 +21,7 @@ samples = {}
 #postprocessed ntuples are stored at /eos/cms/store/group/phys_susy/hephy/StopsCompressed/nanoTuples/
 
 
-#Fullsim Signals
+#Fullsim Signals points
 
 samples['Sig_Displaced_300_290'] = [os.path.join(userpath, FullSimSignal_dir, "Displaced/SMS_T2tt_LL_mStop_300_mLSP_290/"), ]
 samples['Sig_Displaced_350_335'] = [os.path.join(userpath, FullSimSignal_dir, "Displaced/SMS_T2tt_LL_mStop_350_mLSP_335/"), ]
@@ -30,6 +31,15 @@ samples['Sig_Prompt_500_420'] = [os.path.join(userpath, FullSimSignal_dir, "Prom
 samples['Sig_Prompt_500_450'] = [os.path.join(userpath, FullSimSignal_dir, "Prompt/SMS_T2tt_mStop_500_mLSP_450/"), ]
 samples['Sig_Prompt_500_470'] = [os.path.join(userpath, FullSimSignal_dir, "Prompt/SMS_T2tt_mStop_500_mLSP_470/"), ]
 
+#Fastsim Signals points
+
+samples['Sig_Displaced_fast_300_290'] = [os.path.join(userpath, FullSimSignal_dir, "Displaced/SMS_T2tt_LL_mStop_300_mLSP_290_FS/"), ]
+samples['Sig_Displaced_fast_350_335'] = [os.path.join(userpath, FullSimSignal_dir, "Displaced/SMS_T2tt_LL_mStop_350_mLSP_335_FS/"), ]
+samples['Sig_Displaced_fast_400_380'] = [os.path.join(userpath, FullSimSignal_dir, "Displaced/SMS_T2tt_LL_mStop_400_mLSP_380_FS/"), ]
+
+samples['Sig_Prompt_fast_500_420'] = [os.path.join(userpath, FastSimSignal_dir, "Prompt/SMS_T2tt_mStop_500_mLSP_420_FS/"), ]
+samples['Sig_Prompt__fast_500_450'] = [os.path.join(userpath, FastSimSignal_dir, "Prompt/SMS_T2tt_mStop_500_mLSP_450_FS/"), ]
+samples['Sig_Prompt_fast_500_470'] = [os.path.join(userpath, FastSimSignal_dir, "Prompt/SMS_T2tt_mStop_500_mLSP_470_FS/"), ]
 
 
 # T2tt sample fastsim: not produced yet
@@ -68,7 +78,8 @@ samples['QCD_HT1000to1500'] = [os.path.join(userpath, MC_dir, "QCD_HT1000to1500/
 samples['QCD_HT1500to2000'] = [os.path.join(userpath, MC_dir, "QCD_HT1500to2000/"), 20.4, 1114059]
 samples['QCD_HT2000toInf'] = [os.path.join(userpath, MC_dir, "QCD_HT2000toInf/"), 25.25, 1034862]
 samples['QCD_HT2000toInf_madgraph'] = [os.path.join(userpath, MC_dir, "QCD_HT2000toInf_madgraph/"), 25.25, 392968]
-samples['QCD'] = [samples['QCD_HT50to100'],samples['QCD_HT100to200'],samples['QCD_HT200to300'],samples['QCD_HT200to300_madgraph'],samples['QCD_HT300to500_madgraph'],samples['QCD_HT500to700_madgraph'],samples['QCD_HT700to1000_madgraph'], samples['QCD_HT1000to1500'],samples['QCD_HT1500to2000'],samples['QCD_HT2000toInf'],samples['QCD_HT2000toInf_madgraph'] ]
+samples['QCD_All'] = [samples['QCD_HT50to100'],samples['QCD_HT100to200'],samples['QCD_HT200to300'],samples['QCD_HT200to300_madgraph'],samples['QCD_HT300to500_madgraph'],samples['QCD_HT500to700_madgraph'],samples['QCD_HT700to1000_madgraph'], samples['QCD_HT1000to1500'],samples['QCD_HT1500to2000'],samples['QCD_HT2000toInf'],samples['QCD_HT2000toInf_madgraph'] ]
+samples['QCD'] = [samples['QCD_HT300to500_madgraph'],samples['QCD_HT500to700_madgraph'],samples['QCD_HT700to1000_madgraph'], samples['QCD_HT1000to1500'],samples['QCD_HT1500to2000'],samples['QCD_HT2000toInf'],samples['QCD_HT2000toInf_madgraph'] ]
 
 samples['ZJetsToNuNu_HT100to200'] = [os.path.join(userpath, MC_dir, "DYJetsToNuNu_HT100to200/"), 344.9781, ]
 samples['ZJetsToNuNu_HT200to400'] = [os.path.join(userpath, MC_dir, "DYJetsToNuNu_HT200to400/"), 96.3828, ]
