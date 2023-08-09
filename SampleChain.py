@@ -38,7 +38,7 @@ class SampleChain():
         elif year_str=='2016PostVFP':
             self.samplelist = FileList_Fake_UL2016PostVFP.samples if 'fake' in proc else FileList_UL2016PostVFP.samples
         elif year_str=='2016':
-            self.samplelist = FileList_Fake_2016_janik.samples if 'fake' in proc else FileList_2016.samples
+            self.samplelist = FileList_Fake_2016_janik.samples if 'fake' in proc else FileList_UL2016.samples
         elif year_str=='2017':
             self.samplelist = FileList_Fake_UL2017.samples if 'fake' in proc else FileList_UL2017.samples
         else:
