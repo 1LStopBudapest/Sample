@@ -4,7 +4,7 @@ from Dir import userpath
 
 MC_dir = "PostProcessedNtuple/2016/UL/PostVFP/Met"
 Data_dir = MC_dir
-Signal_dir = MC_dir
+Signal_dir = "PostProcessedNtuple/2016/UL/SignalGrid/"
 
 FullSimSignal_dir = "PostProcessedNtuple/2016/UL/PostVFP/FullsimSig/"
 FastSimSignal_dir = "PostProcessedNtuple/2016/UL/FastsimSig/"
@@ -42,8 +42,8 @@ samples['Sig_Prompt_500_450_fast'] = [os.path.join(userpath, FastSimSignal_dir, 
 samples['Sig_Prompt_500_470_fast'] = [os.path.join(userpath, FastSimSignal_dir, "Prompt/SMS_T2tt_mStop_500_mLSP_470_FS/"), ]
 
 
-# T2tt sample fastsim: not produced yet
-#samples['T2tt'] = [os.path.join(userpath, Signal_dir, "T2tt/"), ]
+# T2tt sample fastsim: prompt
+samples['T2tt'] = [os.path.join(userpath, Signal_dir, "Prompt/T2tt/"), ]
 
 # BK MC
 
