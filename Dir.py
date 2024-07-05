@@ -1,8 +1,4 @@
 import os
-
-if os.environ['USER'] in ['kash']:
-    userpath = "/home/kash/Work/RootFile/"
-    plotDir = "/home/kash/Work/TestPlots/"
     
 if os.environ['USER'] in ['mahmoud']:
     userpath = "/home/mahmoud/PhDwork/susy/"
