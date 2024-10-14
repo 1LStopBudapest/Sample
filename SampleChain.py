@@ -3,12 +3,12 @@ import ROOT
 import subprocess
 import types
 import FileList_2016
-import FileList_Fake_2016_janik
 import FileList_UL2016PreVFP
 import FileList_UL2016PostVFP
 import FileList_UL2017
 import FileList_UL2018
 import FileList_Fake_UL2016PostVFP
+import FileList_Fake_UL2018
 
 class SampleChain():
     #values /pb
