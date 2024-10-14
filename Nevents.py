@@ -8,8 +8,8 @@ def get_parser():
     '''
     import argparse
     argParser = argparse.ArgumentParser(description = "Argument parser")
-    argParser.add_argument('--sample',           action='store',                     type=str,            default='TTLep_pow',                                help="Which sample?" )
-    argParser.add_argument('--year',             action='store',                     type=str,            default='2016PostVFP',                                             help="Which year?" )
+    argParser.add_argument('--sample',           action='store',                     type=str,            default='TTSingleLep_pow',                                help="Which sample?" )
+    argParser.add_argument('--year',             action='store',                     type=str,            default='2018',                                             help="Which year?" )
     argParser.add_argument('--proc',             action='store',                     type=str,            default='other',                                             help="Which year?" )    
     return argParser
 
