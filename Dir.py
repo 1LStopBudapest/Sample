@@ -22,3 +22,11 @@ if os.environ['USER'] in ['mleoncoe']:
     userpath = "/big_data/LepStop/"
     plotDir = "/home/mleoncoe/stopAnalysis/test/Plots/"
     Xfiles = "/home/mleoncoe/stopAnalysis/test/AuxFiles/"   
+
+# --- lxplus -----------------------------------------------------------------
+_host = os.uname()[1]
+if _host.startswith('lxplus') or 'cern.ch' in _host:
+    basedir  = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    userpath = "unused"
+    plotDir  = os.path.join(basedir, "Plots") + "/"
+    Xfiles   = os.path.join(basedir, "AuxFiles") + "/"
