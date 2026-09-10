@@ -3,8 +3,8 @@ import ROOT
 import subprocess
 import types
 import FileList_LLStops_2018_reworked
-import FileList_LLStops_2017
-import FileList_LLStops_2016
+import FileList_LLStops_2017_reworked
+import FileList_LLStops_2016_reworked
 
 class SampleChainSplittedBothBR():
     #values /pb
@@ -30,7 +30,12 @@ class SampleChainSplittedBothBR():
         self.filestorun = filestorun
         self.treename = treename
         #Always 2018, add if for different years
-        self.samplelist = FileList_LLStops_2018_reworked.samples
+        if year == '2016PreVFP' or year == '2016PostVFP':
+            self.samplelist = FileList_LLStops_2016_reworked.samples
+        elif year == '2017':
+            self.samplelist = FileList_LLStops_2017_reworked.samples
+        else:
+            self.samplelist = FileList_LLStops_2018_reworked.samples
             
     def getchain(self):
         ch = ROOT.TChain(self.treename)
